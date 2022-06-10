@@ -1,5 +1,6 @@
 import { Button, Cell, Grid, H, Input, Option, Select } from '@balance-pl/lego'
 import { Controller, useForm } from 'react-hook-form'
+import './styles.scss'
 
 const styles = {
   input: {
@@ -46,6 +47,7 @@ export const UserForm = () => {
               {...field}
               style={styles.input}
               label="Фамилия"
+              className={errors?.lastName && 'withError'}
               error={errors?.lastName && errors.lastName.message}
             />
           )}
@@ -59,6 +61,7 @@ export const UserForm = () => {
               {...field}
               style={styles.input}
               label="Имя"
+              className={errors?.firstName && 'withError'}
               error={errors?.firstName && errors.firstName.message}
             />
           )}
@@ -91,6 +94,7 @@ export const UserForm = () => {
                   {...field}
                   style={styles.input}
                   label="Мобильный телефон"
+                  className={errors?.phone && 'withError'}
                   error={errors?.phone && errors.phone.message}
                   // mask="+7 (999) 999-99-99"
                 />
@@ -107,6 +111,7 @@ export const UserForm = () => {
                   {...field}
                   style={styles.input}
                   label="Дата рождения"
+                  className={errors?.birthday && 'withError'}
                   error={errors?.birthday && errors.birthday.message}
                 />
               )}
@@ -126,6 +131,7 @@ export const UserForm = () => {
                   {...field}
                   style={styles.input}
                   label="Email"
+                  className={errors?.email && 'withError'}
                   error={errors?.email && errors.email.message}
                 />
               )}
