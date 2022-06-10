@@ -98,9 +98,5 @@
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0",
     "webpack": "^5.73.0"
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix"
   }
 }

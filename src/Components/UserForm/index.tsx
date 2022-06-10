@@ -1,14 +1,4 @@
-import {
-  Button,
-  Cell,
-  Grid,
-  H,
-  Input,
-  InputDate,
-  Option,
-  Select,
-} from '@balance-pl/lego'
-import './styles.scss'
+import { Button, Cell, Grid, H, Input, Option, Select } from '@balance-pl/lego'
 
 const styles = {
   input: {
@@ -42,7 +32,6 @@ export const UserForm = () => {
             />
           </Cell>
           <Cell>
-            <InputDate style={styles.input} label="Дата рождения" />
             <Input style={styles.input} label="Email" />
           </Cell>
         </Grid>
